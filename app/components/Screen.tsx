@@ -4,9 +4,11 @@ import {
   StyleProp,
   StyleSheet,
   ViewStyle,
+  Dimensions
 } from "react-native";
 import Constants from "expo-constants";
 
+const height = Dimensions.get("window").height;
 const Screen = ({
   children,
   style,
@@ -23,9 +25,9 @@ const Screen = ({
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     width: "100%",
-    height: "100%",
-    paddingTop: Constants.statusBarHeight,
+    marginTop: Constants.statusBarHeight,
   }
 });
 

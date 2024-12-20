@@ -1,8 +1,9 @@
 import verses from "../datas/verses"
 
-const getRandomVerse = () => {
-    const randomIndex = Math.floor(Math.random() * verses.length);
-    return verses[randomIndex];
+const getRandomVerses = () => {
+    // const randomIndex = Math.floor(Math.random() * verses.length);
+
+    return verses;
 }
 
-export {getRandomVerse}
+export {getRandomVerses}

@@ -165,8 +165,8 @@ const verses = [
     category: "Sadness",
   },
   {
-    arabic: "أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ",
-    translation: "Indeed, by the remembrance of Allah hearts are assured.",
+    arabic: "ٱلَّذِينَ ءَامَنُوا۟ وَتَطْمَئِنُّ قُلُوبُهُم بِذِكْرِ ٱللَّهِ ۗ أَلَا بِذِكْرِ ٱللَّهِ تَطْمَئِنُّ ٱلْقُلُوبُ",
+    translation: "Those who believe and whose hearts find comfort in the remembrance of Allah. Surely in the remembrance of Allah do hearts find peace",
     reference: "Surah Ar-Ra'd (13:28)",
     category: "Sadness",
   },
@@ -947,7 +947,7 @@ const verses = [
   },
   {
     arabic: "أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ",
-    translation: "Indeed, by the remembrance of Allah do hearts find rest.",
+    translation: "Surely, in the remembrance of Allah do hearts find comfort.",
     reference: "Surah Ar-Ra'd (13:28)",
     category: "Comfort",
   },

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "SoothingQuran",
-    "slug": "SoothingQuran",
+    "name": "Soothing Quran",
+    "slug": "Soothing-Quran",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/icon.png",
@@ -26,6 +26,17 @@
     },
     "plugins": [
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f992ff88-0d18-4e85-8015-3c1b2e6bf238"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f992ff88-0d18-4e85-8015-3c1b2e6bf238"
+    }
   }
 }
