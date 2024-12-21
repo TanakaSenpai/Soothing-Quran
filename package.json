@@ -16,7 +16,8 @@
     "expo-updates": "^0.26.10",
     "react": "18.3.1",
     "react-native": "0.76.5",
-    "react-native-swiper-flatlist": "^3.2.5"
+    "react-native-swiper-flatlist": "^3.2.5",
+    "expo-dev-client": "~5.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
