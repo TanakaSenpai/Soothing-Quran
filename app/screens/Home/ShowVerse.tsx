@@ -8,15 +8,18 @@ import {
   Dimensions,
   ScrollView,
 } from "react-native";
+import { useBottomTabBarHeight } from '@react-navigation/bottom-tabs';
 
 import { Verse } from "../../datas/verses";
 
 const height = Dimensions.get("window").height;
 
 const ShowVerse = ({verse}: {verse: Verse}) => {
-
+  const bottomTabHeight = useBottomTabBarHeight()
+  const screenHeight = Dimensions.get("window").height; 
+  const itemHeight = screenHeight - Constants.statusBarHeight - bottomTabHeight; 
   return (
-      <View style={styles.view}>
+      <View style={[styles.view, {height: itemHeight}]}>
         <ImageBackground
           source={require("../../assets/bg.png")}
           resizeMode="cover"
@@ -39,9 +42,12 @@ const ShowVerse = ({verse}: {verse: Verse}) => {
 };
 
 const styles = StyleSheet.create({
+  view: {
+    flex:1,
+  },
   container: {
     position: "absolute",
-    top: height * 0.51,
+    top: height * 0.48,
     left: 0,
     right: 0,
     bottom: 0,
@@ -50,12 +56,8 @@ const styles = StyleSheet.create({
   },
   bgImage: {
     flex: 1,
-    height: height - Constants.statusBarHeight
-  },
-  view: {
-    flex: 1,
-    width: "100%",
-    height: "100%"
+    height: "100%",
+    width: "100%"
   },
   scrollView: {
     paddingHorizontal: 20,
