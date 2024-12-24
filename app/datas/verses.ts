@@ -722,7 +722,7 @@ const verses = [
   },
   {
     arabic: "يُضِلُّ مَن يَشَاءُ وَيَهْدِي مَن يَشَاءُ",
-    translation: "He leads astray whom He wills and guides whom He wills.",
+    translation: "He leaves astray whom He wills and guides whom He wills.",
     reference: "Surah Al-An'am (6:39)",
     category: "Confused",
   },

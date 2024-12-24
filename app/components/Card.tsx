@@ -1,15 +1,15 @@
 import React from 'react';
-import { View, StyleSheet, Text, TouchableOpacity } from'react-native';
+import { StyleSheet, Text, TouchableOpacity } from'react-native';
 
 import { Category } from '../datas/categories';
 
-const Card = ({item, onPress}: {item: Category; onPress: () => void}) => {
+const Card = ({item, onPress}: {item: Category; onPress: (category: string) => void}) => {
     return (
         <TouchableOpacity
-        onPress={onPress}
+        onPress={() => onPress(item.name)}
           style={[
             styles.categoryContainer,
-            { backgroundColor: item.color } // Set dynamic background color
+            { backgroundColor: item.color }
           ]}
         >
           <Text style={styles.categoryText}>{item.name}</Text>

@@ -2,13 +2,20 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
-import HomeScreen from "../screens/Home/HomeScreen";
+import HomeScreen from "../screens/HomeScreen";
 import CategoryNavigator from "./CategoryNavigator";
 
 const TabNavigator = () => {
   const Tab = createBottomTabNavigator();
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{ 
+      tabBarStyle: {
+        backgroundColor: "#3E4B47",
+        borderTopWidth: 0
+      },
+      tabBarActiveTintColor: '#F5D8A6', // Creamy gold for active tab
+          tabBarInactiveTintColor: '#A6A6A6',
+     }}>
       <Tab.Screen
         name="Home"
         component={HomeScreen}
@@ -20,10 +27,11 @@ const TabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Categories"
+        name="CategoriesNavigator"
         component={CategoryNavigator}
         options={{
           headerShown: false,
+          title: "Categories",
           tabBarIcon: ({ size, color }) => (
             <MaterialCommunityIcons name="folder" size={size} color={color} />
           ),
