@@ -24,7 +24,7 @@
       "package": "com.tanakasenpai.SoothingQuran"
     },
     "web": {
-      "favicon": "./app/assets/favicon.png"
+      "favicon": "./app/assets/icon.png"
     },
     "plugins": [
       "expo-font"

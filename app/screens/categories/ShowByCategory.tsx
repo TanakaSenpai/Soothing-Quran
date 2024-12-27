@@ -18,7 +18,8 @@ const ShowByCategory = () => {
   const route = useRoute();
   const { category } = route.params as RouteParams;
   const verses = getVersesByCategory(category);
-  if (!verses)
+
+  if (verses.length == 0)
     return (
       <Text style={styles.notFound}>No verses found for this category.</Text>
     );
@@ -43,7 +44,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: "red",
     textAlign: "center",
-    marginVertical: 20,
+    marginVertical: 60,
   },
 });
 
