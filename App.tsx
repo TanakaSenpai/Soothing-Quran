@@ -3,14 +3,15 @@ import { NavigationContainer } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import TabNavigator from "./app/navigation/TabNavigator";
+import Screen from "./app/components/Screen";
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
+    <Screen style={styles.container}>
       <NavigationContainer>
         <TabNavigator />
       </NavigationContainer>
-    </SafeAreaView>
+    </Screen>
   );
 }
 

@@ -3,12 +3,11 @@ import {
   SafeAreaView,
   StyleProp,
   StyleSheet,
-  ViewStyle,
-  Dimensions
+  ViewStyle
 } from "react-native";
 import Constants from "expo-constants";
+import { View } from "react-native";
 
-const height = Dimensions.get("window").height;
 const Screen = ({
   children,
   style,
@@ -17,9 +16,9 @@ const Screen = ({
   style?: StyleProp<ViewStyle>;
 }) => {
   return (
-    <SafeAreaView style={[styles.container, style]}>
+    <View style={[styles.container, style]}>
       {children}
-    </SafeAreaView>
+    </View>
   );
 };
 

@@ -72,12 +72,11 @@ const styles = StyleSheet.create({
   },
   container: {
     position: "absolute",
-    top: height * 0.48,
     left: 0,
     right: 0,
-    bottom: 0,
+    bottom: height * 0.17,
     justifyContent: "flex-start",
-    maxHeight: 230,
+    maxHeight: 200,
   },
   bgImage: {
     flex: 1,
